@@ -11,6 +11,7 @@ import SwiftUI
 struct GiftsView: View {
   
   @StateObject var viewModel: ViewModel
+  @EnvironmentObject var authViewModel: AuthViewModel
   
   @FocusState private var isSearchFocused: Bool
   //let actions: () -> Void
@@ -144,7 +145,7 @@ struct GiftsView: View {
   private var navBar: some View {
     HStack {
       Button {
-        viewModel.signOut()
+        authViewModel.signOut()
       } label: {
         Image(systemName: "arrow.uturn.backward")
       }

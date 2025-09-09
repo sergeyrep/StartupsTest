@@ -1,0 +1,657 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A5954F192E6DD11300F49726 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = A5954F182E6DD11300F49726 /* FirebaseAnalytics */; };
+		A5954F312E6DD40000F49726 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = A5954F302E6DD40000F49726 /* GoogleSignIn */; };
+		A5954F332E6DD40000F49726 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A5954F322E6DD40000F49726 /* GoogleSignInSwift */; };
+		A5954F382E6DD4AF00F49726 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A5954F372E6DD4AF00F49726 /* FirebaseAuth */; };
+		A5954F3A2E6DD4B400F49726 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = A5954F392E6DD4B400F49726 /* FirebaseCore */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A5954EF92E6DD03500F49726 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5954EE32E6DD03300F49726 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5954EEA2E6DD03300F49726;
+			remoteInfo = StartupsTest;
+		};
+		A5954F032E6DD03500F49726 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5954EE32E6DD03300F49726 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5954EEA2E6DD03300F49726;
+			remoteInfo = StartupsTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A5954EEB2E6DD03300F49726 /* StartupsTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StartupsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5954EF82E6DD03500F49726 /* StartupsTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StartupsTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5954F022E6DD03500F49726 /* StartupsTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StartupsTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		A5E2A7C92E6DE36500B2F45B /* Exceptions for "StartupsTest" folder in "StartupsTest" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = A5954EEA2E6DD03300F49726 /* StartupsTest */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		A5954EED2E6DD03300F49726 /* StartupsTest */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A5E2A7C92E6DE36500B2F45B /* Exceptions for "StartupsTest" folder in "StartupsTest" target */,
+			);
+			path = StartupsTest;
+			sourceTree = "<group>";
+		};
+		A5954EFB2E6DD03500F49726 /* StartupsTestTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = StartupsTestTests;
+			sourceTree = "<group>";
+		};
+		A5954F052E6DD03500F49726 /* StartupsTestUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = StartupsTestUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5954EE82E6DD03300F49726 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5954F332E6DD40000F49726 /* GoogleSignInSwift in Frameworks */,
+				A5954F3A2E6DD4B400F49726 /* FirebaseCore in Frameworks */,
+				A5954F192E6DD11300F49726 /* FirebaseAnalytics in Frameworks */,
+				A5954F312E6DD40000F49726 /* GoogleSignIn in Frameworks */,
+				A5954F382E6DD4AF00F49726 /* FirebaseAuth in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5954EF52E6DD03500F49726 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5954EFF2E6DD03500F49726 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A5954EE22E6DD03300F49726 = {
+			isa = PBXGroup;
+			children = (
+				A5954EED2E6DD03300F49726 /* StartupsTest */,
+				A5954EFB2E6DD03500F49726 /* StartupsTestTests */,
+				A5954F052E6DD03500F49726 /* StartupsTestUITests */,
+				A5954F362E6DD4AF00F49726 /* Frameworks */,
+				A5954EEC2E6DD03300F49726 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A5954EEC2E6DD03300F49726 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5954EEB2E6DD03300F49726 /* StartupsTest.app */,
+				A5954EF82E6DD03500F49726 /* StartupsTestTests.xctest */,
+				A5954F022E6DD03500F49726 /* StartupsTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5954F362E6DD4AF00F49726 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5954EEA2E6DD03300F49726 /* StartupsTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5954F0C2E6DD03500F49726 /* Build configuration list for PBXNativeTarget "StartupsTest" */;
+			buildPhases = (
+				A5954EE72E6DD03300F49726 /* Sources */,
+				A5954EE82E6DD03300F49726 /* Frameworks */,
+				A5954EE92E6DD03300F49726 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A5954EED2E6DD03300F49726 /* StartupsTest */,
+			);
+			name = StartupsTest;
+			packageProductDependencies = (
+				A5954F182E6DD11300F49726 /* FirebaseAnalytics */,
+				A5954F302E6DD40000F49726 /* GoogleSignIn */,
+				A5954F322E6DD40000F49726 /* GoogleSignInSwift */,
+				A5954F372E6DD4AF00F49726 /* FirebaseAuth */,
+				A5954F392E6DD4B400F49726 /* FirebaseCore */,
+			);
+			productName = StartupsTest;
+			productReference = A5954EEB2E6DD03300F49726 /* StartupsTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A5954EF72E6DD03500F49726 /* StartupsTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5954F0F2E6DD03500F49726 /* Build configuration list for PBXNativeTarget "StartupsTestTests" */;
+			buildPhases = (
+				A5954EF42E6DD03500F49726 /* Sources */,
+				A5954EF52E6DD03500F49726 /* Frameworks */,
+				A5954EF62E6DD03500F49726 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5954EFA2E6DD03500F49726 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A5954EFB2E6DD03500F49726 /* StartupsTestTests */,
+			);
+			name = StartupsTestTests;
+			packageProductDependencies = (
+			);
+			productName = StartupsTestTests;
+			productReference = A5954EF82E6DD03500F49726 /* StartupsTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A5954F012E6DD03500F49726 /* StartupsTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5954F122E6DD03500F49726 /* Build configuration list for PBXNativeTarget "StartupsTestUITests" */;
+			buildPhases = (
+				A5954EFE2E6DD03500F49726 /* Sources */,
+				A5954EFF2E6DD03500F49726 /* Frameworks */,
+				A5954F002E6DD03500F49726 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5954F042E6DD03500F49726 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A5954F052E6DD03500F49726 /* StartupsTestUITests */,
+			);
+			name = StartupsTestUITests;
+			packageProductDependencies = (
+			);
+			productName = StartupsTestUITests;
+			productReference = A5954F022E6DD03500F49726 /* StartupsTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5954EE32E6DD03300F49726 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					A5954EEA2E6DD03300F49726 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					A5954EF72E6DD03500F49726 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = A5954EEA2E6DD03300F49726;
+					};
+					A5954F012E6DD03500F49726 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = A5954EEA2E6DD03300F49726;
+					};
+				};
+			};
+			buildConfigurationList = A5954EE62E6DD03300F49726 /* Build configuration list for PBXProject "StartupsTest" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A5954EE22E6DD03300F49726;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A5954F172E6DD11300F49726 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				A5954F2F2E6DD40000F49726 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A5954EEC2E6DD03300F49726 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5954EEA2E6DD03300F49726 /* StartupsTest */,
+				A5954EF72E6DD03500F49726 /* StartupsTestTests */,
+				A5954F012E6DD03500F49726 /* StartupsTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5954EE92E6DD03300F49726 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5954EF62E6DD03500F49726 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5954F002E6DD03500F49726 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5954EE72E6DD03300F49726 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5954EF42E6DD03500F49726 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5954EFE2E6DD03500F49726 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A5954EFA2E6DD03500F49726 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5954EEA2E6DD03300F49726 /* StartupsTest */;
+			targetProxy = A5954EF92E6DD03500F49726 /* PBXContainerItemProxy */;
+		};
+		A5954F042E6DD03500F49726 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5954EEA2E6DD03300F49726 /* StartupsTest */;
+			targetProxy = A5954F032E6DD03500F49726 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A5954F0A2E6DD03500F49726 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = BW5FL75AAX;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A5954F0B2E6DD03500F49726 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = BW5FL75AAX;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A5954F0D2E6DD03500F49726 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = StartupsTest/StartupsTest.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BW5FL75AAX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StartupsTest/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Res.StartupsTestt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A5954F0E2E6DD03500F49726 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = StartupsTest/StartupsTest.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BW5FL75AAX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StartupsTest/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Res.StartupsTestt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A5954F102E6DD03500F49726 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BW5FL75AAX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Res.StartupsTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StartupsTest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StartupsTest";
+			};
+			name = Debug;
+		};
+		A5954F112E6DD03500F49726 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BW5FL75AAX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Res.StartupsTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StartupsTest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StartupsTest";
+			};
+			name = Release;
+		};
+		A5954F132E6DD03500F49726 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BW5FL75AAX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Res.StartupsTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StartupsTest;
+			};
+			name = Debug;
+		};
+		A5954F142E6DD03500F49726 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BW5FL75AAX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Res.StartupsTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StartupsTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5954EE62E6DD03300F49726 /* Build configuration list for PBXProject "StartupsTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5954F0A2E6DD03500F49726 /* Debug */,
+				A5954F0B2E6DD03500F49726 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5954F0C2E6DD03500F49726 /* Build configuration list for PBXNativeTarget "StartupsTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5954F0D2E6DD03500F49726 /* Debug */,
+				A5954F0E2E6DD03500F49726 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5954F0F2E6DD03500F49726 /* Build configuration list for PBXNativeTarget "StartupsTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5954F102E6DD03500F49726 /* Debug */,
+				A5954F112E6DD03500F49726 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5954F122E6DD03500F49726 /* Build configuration list for PBXNativeTarget "StartupsTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5954F132E6DD03500F49726 /* Debug */,
+				A5954F142E6DD03500F49726 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A5954F172E6DD11300F49726 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.2.0;
+			};
+		};
+		A5954F2F2E6DD40000F49726 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A5954F182E6DD11300F49726 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A5954F172E6DD11300F49726 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		A5954F302E6DD40000F49726 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A5954F2F2E6DD40000F49726 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		A5954F322E6DD40000F49726 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A5954F2F2E6DD40000F49726 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+		A5954F372E6DD4AF00F49726 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A5954F172E6DD11300F49726 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		A5954F392E6DD4B400F49726 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A5954F172E6DD11300F49726 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A5954EE32E6DD03300F49726 /* Project object */;
+}
