@@ -21,27 +21,11 @@ enum ImageSet: String {
   case Events
   case usa
   case fav
-  
-  var id: String { rawValue }
-}
-
-struct ImageSetData: Identifiable {
-  var id = UUID()
-  var image: ImageSetConteiner
 }
 
 enum ImageSetConteiner: String {
   case telegram
   case imageq
-  
-  var id: String { rawValue }
-}
-
-extension ImageSetData {
-  static let mock: [ImageSetData] = [
-    ImageSetData(image: .imageq),
-    ImageSetData(image: .telegram),
-  ]
 }
 
 enum ImageSetCollection: String {
@@ -50,14 +34,38 @@ enum ImageSetCollection: String {
   case image1
   case imageColl
   case showall
-  
-  var id: String { rawValue }
+}
+
+struct ImageSetData: Identifiable {
+  var id = UUID()
+  var image: ImageSetConteiner
 }
 
 struct Collection: Identifiable {
   var id = UUID()
   var title: String
   var image: ImageSetCollection
+}
+
+protocol ImageSetProtocol {
+    var rawValue: String { get }
+}
+
+extension Image {
+  init<T: ImageSetProtocol>(_ name: T) {
+    self.init(name.rawValue)
+  }
+}
+
+extension ImageSetCollection: ImageSetProtocol {}
+extension ImageSetConteiner: ImageSetProtocol {}
+extension ImageSet: ImageSetProtocol {}
+
+extension ImageSetData {
+  static let mock: [ImageSetData] = [
+    ImageSetData(image: .imageq),
+    ImageSetData(image: .telegram),
+  ]
 }
 
 extension Collection {
@@ -67,23 +75,3 @@ extension Collection {
     Collection(title: "Thank you", image: .imageColl),
   ]
 }
-
-extension Image {
-  init (_ name: ImageSetCollection) {
-    self.init(name.rawValue)
-  }
-}
-
-extension Image {
-  init (_ name: ImageSetConteiner) {
-    self.init(name.rawValue)
-  }
-}
-
-
-extension Image {
-  init(_ name: ImageSet) {
-    self.init(name.rawValue)
-  }
-}
-

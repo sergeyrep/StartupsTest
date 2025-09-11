@@ -11,24 +11,9 @@
 			<string>google.signin</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.googleusercontent.apps.846639715995-6f1detdlh1igmh0h9nk9qkcbd3jjn3fq</string>
+				<string>com.googleusercontent.apps.846639715995-1ucmnggiugnjg77q2nb7ossdhh7u85j4</string>
 			</array>
 		</dict>
 	</array>
 </dict>
 </plist>
-<key>NSAppTransportSecurity</key>
-<dict>
-    <key>NSAllowsArbitraryLoads</key>
-    <true/>
-    <key>NSExceptionDomains</key>
-    <dict>
-        <key>court360.ai</key>
-        <dict>
-            <key>NSIncludesSubdomains</key>
-            <true/>
-            <key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
-            <true/>
-        </dict>
-    </dict>
-</dict>

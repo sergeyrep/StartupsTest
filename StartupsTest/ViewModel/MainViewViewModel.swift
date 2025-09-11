@@ -9,6 +9,7 @@ import Foundation
 
 extension MainView {
   
+  @MainActor
   final class ViewModel: ObservableObject {
     
     @Published var selectedTab: TabBarItem = .gifts

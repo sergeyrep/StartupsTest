@@ -13,14 +13,10 @@ import GoogleSignIn
 struct YourApp: App {
   
   @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
-  @StateObject private var authViewModel = AuthViewModel()
-  
+    
   var body: some Scene {
     WindowGroup {
-      NavigationView {
-        ContentView(giftsVM: .init())
-          .environmentObject(AuthViewModel())
-      }
+      InitialView()
     }
   }
 }
@@ -29,6 +25,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
   func application(_ application: UIApplication,
                    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
     FirebaseApp.configure()
+    configureTabBar()
     return true
   }
   
@@ -36,5 +33,14 @@ class AppDelegate: NSObject, UIApplicationDelegate {
                    open url: URL,
                    options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool {
     return GIDSignIn.sharedInstance.handle(url)
+  }
+  
+  private func configureTabBar() {
+    let appearance = UITabBarAppearance()
+    appearance.configureWithOpaqueBackground()
+    appearance.backgroundColor = .white
+    
+    UITabBar.appearance().standardAppearance = appearance
+    UITabBar.appearance().scrollEdgeAppearance = appearance
   }
 }

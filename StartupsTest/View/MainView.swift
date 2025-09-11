@@ -13,16 +13,23 @@ struct MainView: View {
   
   @StateObject var viewModel: ViewModel
   
+  @State private var navToBack: Bool = false
+  
+  @Environment(\.dismiss) private var dismiss
+  
   var body: some View {
+    content
+      .navigationBarBackButtonHidden()
+  }
+  
+  private var content: some View {
     TabView(selection: $viewModel.selectedTab) {
       ForEach(TabBarItem.allCases, id: \.self) { tab in
-        NavigationStack {
-          makeTabView(tab)
-        }
-        .tabItem {
-          Image(tab.image)
-        }
-        .tag(tab.title)
+        makeTabView(tab)
+          .tabItem {
+            Image(tab.image)
+          }
+          .tag(tab.title)
       }
     }
   }
@@ -31,7 +38,13 @@ struct MainView: View {
   private func makeTabView(_ tab: TabBarItem) -> some View {
     switch tab {
     case .gifts:
-      GiftsView(viewModel: .init(gift: .init()))
+      GiftsView(
+        viewModel: .init(
+          gift: .init(),
+          keychainService: .shared,
+          authService: .init()
+        )
+      )
     case .gift:
       Text("Gifts")
     case .events:
@@ -50,10 +63,11 @@ extension View {
   }
 }
 
-#Preview {
-  GiftsView(viewModel: .init(gift: .init()))
-    .environmentObject(AuthViewModel())
-}
+//#Preview {
+//  GiftsView(viewModel: .init(gift: .init(), keychainService: KeychainService()))
+//    .environmentObject(AuthViewModel())
+//}
+
 
 
 

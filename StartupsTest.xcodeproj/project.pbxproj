@@ -38,7 +38,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		A5E2A7C92E6DE36500B2F45B /* Exceptions for "StartupsTest" folder in "StartupsTest" target */ = {
+		A56077E52E71977200285787 /* Exceptions for "StartupsTest" folder in "StartupsTest" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -51,7 +51,7 @@
 		A5954EED2E6DD03300F49726 /* StartupsTest */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				A5E2A7C92E6DE36500B2F45B /* Exceptions for "StartupsTest" folder in "StartupsTest" target */,
+				A56077E52E71977200285787 /* Exceptions for "StartupsTest" folder in "StartupsTest" target */,
 			);
 			path = StartupsTest;
 			sourceTree = "<group>";

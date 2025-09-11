@@ -7,7 +7,11 @@
 
 import Foundation
 
-class NetworkService {
+protocol NetworkServiceProtocol {
+  func sendIdTokenToBackend(_ idToken: String) async throws -> AuthResult
+}
+
+final class NetworkService: NetworkServiceProtocol {
   static let shared = NetworkService()
   private let baseURL = "https://api.court360.ai/rpc/client"
   
@@ -47,5 +51,6 @@ class NetworkService {
     return authResponse.result
   }
 }
+
 
 

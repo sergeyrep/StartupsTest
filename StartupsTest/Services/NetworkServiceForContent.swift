@@ -10,10 +10,7 @@ import Foundation
 extension NetworkService {
   
   func dowloadDataConteiner() async throws -> [ImageSetData] {
+    try await Task.sleep(for: .seconds(1))
     return ImageSetData.mock
-  }
-  
-  func dowloadDataImage() async throws -> [TabBarItem] {
-    return TabBarItem.allCases
   }
 }
