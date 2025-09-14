@@ -11,7 +11,7 @@ import SwiftUI
 struct GiftsView: View {
   
   @StateObject var viewModel: ViewModel
-  @Environment(\.dismiss) var dismiss  
+  @Environment(\.dismiss) var dismiss
   @FocusState private var isSearchFocused: Bool
   
   var body: some View {
@@ -145,7 +145,7 @@ struct GiftsView: View {
         // logOut
         Task {
           await viewModel.logOut()
-          dismiss()
+         dismiss()
         }
       } label: {
         Image(systemName: "arrow.uturn.backward")

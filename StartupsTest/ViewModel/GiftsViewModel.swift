@@ -33,8 +33,8 @@ extension GiftsView {
     
     func logOut() async {
       do {
-        try await authService.logOut()
         keychainService.deleteAccessToken()
+        try await authService.logOut()
       } catch {
         print(error)
       }

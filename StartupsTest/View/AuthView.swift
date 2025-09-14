@@ -13,8 +13,6 @@ struct AuthView: View {
   
   @StateObject var viewModel: ViewModel
   
-  @State var navigateToMain: Bool = false
-  
   var body: some View {
     contentView
       .navigationDestination(isPresented: $viewModel.isAuth) {
@@ -24,6 +22,7 @@ struct AuthView: View {
         isLoading: $viewModel.isLoading,
         error: $viewModel.error
       )
+      .navigationBarBackButtonHidden(true)
   }
   
   private var contentView: some View {

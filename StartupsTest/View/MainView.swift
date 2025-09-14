@@ -13,13 +13,20 @@ struct MainView: View {
   
   @StateObject var viewModel: ViewModel
   
-  @State private var navToBack: Bool = false
-  
-  @Environment(\.dismiss) private var dismiss
+  // let onLogout: () -> Void
   
   var body: some View {
     content
       .navigationBarBackButtonHidden()
+    //        .navigationDestination(isPresented: $isPresented) {
+    //          AuthView(
+    //            viewModel: .init(
+    //              networkService: NetworkService.shared,
+    //              keychainService: KeychainService(),
+    //              authService: AuthService()
+    //            )
+    //          )
+    //        }
   }
   
   private var content: some View {
